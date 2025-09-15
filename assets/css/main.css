@@ -131,7 +131,8 @@ input, select, textarea {
 	}
 
 		h2.alt {
-			color: #888;
+<!--			color: #888;	-->
+			color: #000;
 		}
 
 			h2.alt strong {
@@ -2265,6 +2266,7 @@ input, select, textarea {
 			}
 
 			#main > section.beige {
+				color: #000;
 				background-color: #f5f2e1;
 			}
 /* Wide */
