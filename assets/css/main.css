@@ -1988,6 +1988,7 @@ input, select, textarea {
 
 		.item header {
 			background: #fff;
+			color: #000;
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
