@@ -8,13 +8,13 @@
             <p>A Collection of My Projects</p>  
         </div>  
   
-        <!-- Hamburger Menu Button (for mobile) -->  
-        <div id="menu-toggle">  
+        <!-- Hamburger Menu Button -->  
+        <div id="menu-toggle" class="menu-toggle">  
             <span class="icon solid fa-bars"></span> <!-- Hamburger icon -->  
         </div>  
   
         <!-- Nav -->  
-        <nav id="nav" class="hidden"> <!-- Navigation starts hidden on mobile -->  
+        <nav id="nav" class="nav-menu">  
             <ul>  
                 <li>  
                     <a href="index.html#portfolio" id="portfolio-link">  
@@ -44,12 +44,15 @@
     </div>  
 </div>  
   
-<!-- JavaScript to Handle the Toggle -->  
+<!-- JavaScript -->  
 <script>  
-    // Toggle the visibility of the navigation menu on mobile  
-    document.getElementById('menu-toggle').addEventListener('click', function () {  
-        const nav = document.getElementById('nav');  
-        nav.classList.toggle('hidden'); // Toggle the 'hidden' class  
+    document.addEventListener('DOMContentLoaded', function () {  
+        // Select the toggle button and nav menu  
+        const menuToggle = document.getElementById('menu-toggle');  
+        const navMenu = document.getElementById('nav');  
+  
+        // Add click event listener to toggle the menu visibility  
+        menuToggle.addEventListener('click', function () {  
+            navMenu.classList.toggle('visible'); // Toggle 'visible' class  
+        });  
     });  
-</script>  
-``
