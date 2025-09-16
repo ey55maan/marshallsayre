@@ -8,19 +8,18 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
+		<!-- Navigation Panel Placeholder -->
+			<div id="navigation"></div>
 
-		<!-- Header -->
-			<div id="header"></div>
 				<script>  
-				// Dynamically load the navigation from nav.html  
-				fetch('nav.html')  
-				.then(response => response.text())  
-				.then(html => {  
-					document.getElementById('navigation').innerHTML = html;  
-					})  
-					.catch(error => console.error('Error loading navigation:', error));  
+					// Dynamically load the navigation from nav.html  
+					fetch('nav.html')  
+						.then(response => response.text())  
+						.then(html => {  
+							document.getElementById('navigation').innerHTML = html;  
+						})  
+						.catch(error => console.error('Error loading navigation:', error));  
 				</script>  
-			</div>
 
 		<!-- Main -->
 			<div id="main">
