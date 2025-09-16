@@ -10,43 +10,16 @@
 	<body class="is-preload">
 
 		<!-- Header -->
-			<div id="header">
-
-				<div class="top">
-
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Marshall Sayre</h1>
-							<p>A Colletion of My Projects</p>
-						</div>
-
-					<!-- Nav -->
-						<div id="navigation"></div>  
-							<script>  
-							    // Dynamically load the navigation from nav.html  
-							    fetch('nav.html')  
-							        .then(response => response.text())  
-							        .then(html => {  
-							            document.getElementById('navigation').innerHTML = html;  
-							        })  
-							        .catch(error => console.error('Error loading navigation:', error));  
-							</script>  
-						</div>
-
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-
-				</div>
-
+			<div id="header"></div>
+				<script>  
+				// Dynamically load the navigation from nav.html  
+				fetch('nav.html')  
+				.then(response => response.text())  
+				.then(html => {  
+					document.getElementById('navigation').innerHTML = html;  
+					})  
+					.catch(error => console.error('Error loading navigation:', error));  
+				</script>  
 			</div>
 
 		<!-- Main -->
