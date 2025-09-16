@@ -112,7 +112,8 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+<!--		color: #666;	-->
+<!--		color: 000;	-->
 		line-height: 1.5em;
 	}
 
@@ -131,7 +132,8 @@ input, select, textarea {
 	}
 
 		h2.alt {
-			color: #888;
+<!--			color: #888;	-->
+			color: #000;
 		}
 
 			h2.alt strong {
@@ -1986,6 +1988,7 @@ input, select, textarea {
 
 		.item header {
 			background: #fff;
+			color: #000;
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
@@ -2083,7 +2086,8 @@ input, select, textarea {
 		}
 
 			#header .icons a {
-				color: #41484c;
+<!--				color: #41484c;	-->
+				color: #000000;
 				-moz-transition: color 0.35s ease-in-out;
 				-webkit-transition: color 0.35s ease-in-out;
 				-ms-transition: color 0.35s ease-in-out;
@@ -2263,6 +2267,10 @@ input, select, textarea {
 				background-color: #e8edec;
 			}
 
+			#main > section.beige {
+				color: #000;
+				background-color: #f5f2e1;
+			}
 /* Wide */
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
